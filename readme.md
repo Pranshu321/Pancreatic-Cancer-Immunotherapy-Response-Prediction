@@ -4,6 +4,29 @@
 
 ELITE-GARP (ELISE Inspired Technique using Genetic Algorithm for Response Prediction) is a novel computational framework that combines evolutionary feature selection with ensemble learning to predict patient response to immunotherapy in pancreatic cancer. Leveraging a real-world pancreatic cancer dataset, this framework integrates genetic algorithm-based feature selection with a stacked ensemble of classical machine learning models and neural network components to achieve high predictive performance with robust explainability.
 
+## Dataset Description
+The PDAC MSK 2024 dataset, available on cBioPortal, contains comprehensive clinical and molecular data from patients diagnosed with pancreatic ductal adenocarcinoma (PDAC) treated at Memorial Sloan Kettering Cancer Center[1]. This rich dataset includes:
+
+### Patient Information
+
+- **Demographics**: Race, Sex, and Ethnicity data enabling demographic subgroup analysis
+- **Clinical Outcomes**: Overall Survival Status and Overall Survival (Months) for survival analysis
+- **Disease Classification**: Cancer Study, Cancer Type, Cancer Type Detailed, and Primary Tumor Site for precise tumor origin classification
+
+### Molecular Characteristics
+
+- **Genomic Profiles**: Mutation Count, Fraction Genome Altered, and TMB (nonsynonymous) providing insights into tumor mutational landscapes
+- **MSI Indicators**: Microsatellite instability data through MSI Type and MSI Score, crucial for immunotherapy response prediction
+- **Technical Metadata**: Sample Coverage and Tumor Purity information to evaluate sequencing data quality
+
+### Additional Features
+
+- **Metastasis Information**: Metastatic Site documentation showing anatomical locations of tumor spread
+- **Standardized Coding**: Oncotree Code for structured classification and cross-study data integration
+- **Sample Details**: Sample Type, Sample ID, and Number of Samples Per Patient for assessing sample diversity
+
+The dataset provides a solid foundation for developing predictive models in pancreatic cancer, particularly for immunotherapy response prediction, by offering the combination of detailed clinical annotations with comprehensive genomic profiling data.
+
 ## Key Features
 
 1. **Genetic Algorithm Feature Selection**
@@ -109,9 +132,3 @@ If you use this work in your research, please cite:
 ```
 Jain, P., B, S., Bilal, M., & Sravya, R. (2025). ELITE-GARP: An Explainable Genetic Ensemble for Immunotherapy Response Prediction in Pancreatic Cancer. 
 ```
-
-Citations:
-[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/51351450/78299d9b-b042-4af9-973d-5f1179acf9d5/paste-1.txt
-
----
-Answer from Perplexity: pplx.ai/share
